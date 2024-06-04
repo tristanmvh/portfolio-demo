@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "b716d17490a60471e8ea5b10eb82d0ae"
+name = "portfolio-demo"
+handle = "portfolio-demo"
+application_url = "https://make-driving-causes-cad.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "tristanvicente.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://make-driving-causes-cad.trycloudflare.com/auth/callback",
+  "https://make-driving-causes-cad.trycloudflare.com/auth/shopify/callback",
+  "https://make-driving-causes-cad.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
